@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h5{
+  margin:0;
+}
+
+.bike-logo,
+.bike-title,
+.bike-detail h5{
+  text-transform: uppercase;
+}
+
+body {
+  background: #eee;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination{
+ bottom: 18% !important;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  bottom: 30%;
+  margin: 0;
+}
+.swiper-pagination-bullet{
+  width: 20px;
+  height: 2px;
+  border-radius: 0%;
+}
+.swiper-button-prev{
+  left: 55%;
+  top: 81%;
+}
+.swiper-button-next{
+  top: 81%;
+  right: 41%;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  font-size: 20px;
+}
+
+/*Colors*/
+.bmw-color{
+  color: #48a0d7;
+}
+.bmw-bg_color{
+  background-color: #48a0d7;
+}
+.harley-color{
+  color: #c6b741;
+}
+.harley-bg_color{
+  background-color: #c6b741;
+}
+.indian-color{
+  color: #ba6b33;
+}
+.indian-bg_color{
+  background-color: #ba6b33;
+}
+.ducati-color{
+  color: #1952a3;
+}
+.ducati-bg_color{
+  background-color: #1952a3;
+}
+
+/*----Bike Container----*/
+.bike-container{
+  width: 100%;
+  height: 100%;
+}
+
+/*----Bike Image----*/
+.bike-image{
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bike-1 .bike-image img{
+  width: 800px;
+  height: 450px;
+}
+.bike-2 .bike-image img{
+  width: 900px !important;
+  height: 520px;
+}
+.bike-3 .bike-image img{
+  width: 900px !important;
+  height: 550px;
+}
+.bike-4 .bike-image img{
+  width: 900px !important;
+  height: 500px;
+}
+
+/*----Bike Title----*/
+.bike-title{
+  text-align: left;
+}
+.bike-title h2{
+  font-size: 40px;
+  margin: 0;
+  line-height: 25px;
+}
+.bike-title span{
+  font-size: 22px;
+  font-weight: 600; 
+}
+
+/*----Bike Alignment----*/
+.bmw-alignment{
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  transition: all 0.3s;
+}
+.harley-alignment{
+  position: absolute;
+  top: 24%;
+  left: 22%;
+  transition: all 0.3s;
+}
+.indian-alignment{
+  position: absolute;
+  top: 31%;
+  left: 30%;
+  transition: all 0.3s;
+}
+.ducati-alignment{
+  position: absolute;
+  top: 18%;
+  left: 32%;
+  transition: all 0.3s;
+}
+
+/*----Bike Logo----*/
+.bike-logo{
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  padding: 10px;
+  display: flex;
+}
+.bike-logo img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.bike-logo span{
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin-top: -2px;
+}
+
+/*----Hamburger Menu----*/
+.hambuger-menu{
+  position: absolute;
+  top:0%;
+  right:0%;
+  padding: 25px;
+  border-radius: 2px;
+}
+.hambuger-menu img{
+  width: 45px;
+  height: 20px;
+}
+
+/*----Rank----*/
+.rank{
+  position: absolute;
+  bottom:3%;
+  left:3%;
+  color: #cdcdcd;
+}
+.rank h1{
+  margin: 0;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/*----Share Icon----*/
+.share-icon i{
+  position: absolute;
+  bottom: 4%;
+  right:3%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.share-icon i{
+  color: #cccccc;
+  font-size: 25px;
+}
+
+/*Bike Description*/
+.bike-description{
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+}
+.bike-description ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bike-description li{
+  margin: 0 30px;
+  display: flex;
+}
+
+/*----Bike Icon/Detail----*/
+.bike-icons {
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.bike-icons i{
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.bmw-border{
+  border: 2.6px solid #48a0d7;
+}
+.harley-border{
+  border: 2.6px solid #c6b741;
+}
+.indian-border{
+  border: 2.6px solid #ba6b33;
+}
+.ducati-border{
+  border: 2.6px solid #1952a3;
+}
+
+.bike-detail{
+  text-align: left;
+}
+.bike-detail h5{
+  font-size: 14px;
+  font-weight: bold;
+  
+}
+.bike-detail h3{
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/*----Animations----*/
+
+.swiper-slide-active .bmw-alignment,
+.swiper-slide-active .harley-alignment,
+.swiper-slide-active .indian-alignment,
+.swiper-slide-active .ducati-alignment{
+  animation: leftToRight 0.5s ease-out;
+}
+
+.swiper-slide-active .hambuger-menu{
+  animation: rightToLeft 0.6s ease-in-out;
+}
+.swiper-slide-active .bike-description{
+  animation: bottomToTop 1s ease;
+
+}
+.swiper-slide-active .bike-1 .share-icon i:hover{
+  color: #1952a3;
+}
+.swiper-slide-active .bike-2 .share-icon i:hover{
+  color: #c6b741;
+}
+.swiper-slide-active .bike-3 .share-icon i:hover{
+  color: #ba6b33
+}
+.swiper-slide-active .bike-4 .share-icon i:hover{
+  color: #48a0d7;
+}
+
+.swiper-slide-active .bike-1 .swiper-button-prev::after,
+.swiper-slide-active .bike-1 .swiper-button-next::after{
+  color: #000 !important;
+}
+
+@media (max-width: 1300px){
+  .harley-alignment{
+    left: 18%;
+    transition: all 0.3s;
+  }
+}
+@media (max-width: 1200px){
+  .bmw-alignment{
+    left: 22%;
+  }
+  .harley-alignment{
+    left: 15%;
+  }
+  .indian-alignment{
+    left: 18%;
+  }
+  .ducati-alignment{
+    left: 22%;
+  }
+}
+
+@media (max-width: 1060px){
+  .bike-1 .bike-image img{
+    width: 700px;
+    height: 420px;
+  }
+  .bike-2 .bike-image img{
+    width: 840px !important;
+    height: 520px;
+  }
+  .bike-3 .bike-image img{
+    width: 850px !important;
+    height: 550px;
+  }
+  .bike-4 .bike-image img{
+    width: 850px !important;
+    height: 500px;
+  }
+  .bike-title h2{
+    font-size: 29px;
+  }
+  .swiper-button-prev{
+    left: 1%;
+    top: 50%;
+  }
+  .swiper-button-prev::after{
+    font-size: 40px;
+    margin-left: 20px;
+  }
+  .swiper-button-next{
+    top: 50%;
+    right: 1%;
+  }
+  .swiper-button-next::after{
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  .bike-description li{
+    margin: 0px 10px;
+    display: flex;
+  }
+}
+
+@media (max-width: 900px){
+  
+  
+  .bike-1 .bike-image img{
+    width: 650px;
+    height: 350px;
+  }
+  .bike-2 .bike-image img{
+    width: 650px !important;
+    height: 350px;
+  }
+  .bike-3 .bike-image img{
+    width: 650px !important;
+    height: 350px;
+  }
+  .bike-4 .bike-image img{
+    width: 650px !important;
+    height: 350px;
+  }
+  .ducati-alignment{
+    top: 25%;
+  }
+  .bike-description li{
+    margin: 0 10px;
+    display: flex;
+  }
+  .bike-icons i{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .bike-detail h5{
+    font-size: 12px;
+  }
+  .bike-detail h3{
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 700px){
+  .swiper-pagination{
+    bottom: 52% !important;
+   }
+   .bike-image{
+    height: 70%;
+
+  }
+  .bike-1 .bike-image img{
+    width: 300px;
+    height: 200px;
+  }
+  .bike-2 .bike-image img{
+    width: 300px !important;
+    height: 200px;
+  }
+  .bike-3 .bike-image img{
+    width: 300px !important;
+    height: 200px;
+  }
+  .bike-4 .bike-image img{
+    width: 300px !important;
+    height: 200px;
+  }
+  .bmw-alignment{
+    top: 17%;
+    left: 20%;
+    transition: all 0.3s;
+  }
+  .harley-alignment{
+    top: 20%;
+    left: 16%;
+    transition: all 0.3s;
+  }
+  .indian-alignment{
+    top: 24%;
+    left: 12%;
+    transition: all 0.3s;
+  }
+  .ducati-alignment{
+    top: 19%;
+    left: 20%;
+    transition: all 0.3s;
+  }
+  
+  .bike-description{
+    position: absolute;
+    bottom: 12%;
+    width: 100%;
+  }
+  .bike-description ul{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;  
+  }
+  .bike-description li{
+    margin: 10px 0px;
+    display: flex;
+  }
+  .share-icon i{
+    bottom: 4%;
+    right: 8.5%;
+  }
+  .rank{
+    position: absolute;
+    bottom:1.4%;
+    left: 6%;
+    color: #cdcdcd;
+  }
+  
+}
+
+@keyframes leftToRight{
+  0%{
+    transform: translateX(-120%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rightToLeft{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes bottomToTop{
+  0%{
+    opacity: 0.2;
+    transform: translateY(100%);
+  }
+  25%{
+    opacity: 0.4;
+  }
+  50%{
+    opacity: 0.6;
+  }
+  75%{
+    opacity: 0.8;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
